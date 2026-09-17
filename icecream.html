@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice cream shop</title>
+    <style>
+        *{
+            background-color: pink;
+        }
+        h1{
+            text-align: center;
+            color:rgb(245, 91, 117)
+
+        }
+        h1+p{
+            text-align: center;
+            font-weight: bold;
+            background-color: red;
+            font-size: 20px;
+        }
+        .menu{
+            border: 5px solid  rgb(221, 125, 141);
+            height:400px;
+            width:500px;
+            text-align: center;
+            border-radius:15px;
+
+            
+            
+            
+        }
+        button{
+            height:50px;
+            width: 400px;
+            border-radius: 15px;
+            cursor:pointer;
+            font-weight:bold;
+            font-size: 20px;
+            color:brown;
+            background-color:rgb(228, 157, 228);
+            transition:1s;
+            border-color: blueviolet;
+
+
+            
+        }
+        button:hover{
+            background-color: aquamarine;
+            scale:1.2;
+        }
+        #special{
+            background-color: greenyellow;
+        }
+        #special:hover{
+            background-color: aqua;
+        }
+        .order{
+            background-color: rgb(236, 87, 236);
+            height:50px;
+            width: 200px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>My Ice Cream Shop</h1>
+    <p>We Serve Scoops Of Joy !</p>
+    <div class="menu">
+        <h2>Our today's special ice cream menu</h2>
+       <button>Choclate truffle</button><br><br>
+
+       <button>butterscotch blast</button><br><br>
+
+       <button id="special">Guava GOAT</button><br><br>
+       <button>Strawberry swoosh</button><br><br>
+       <button> Vannila dream</button><br><br>
+
+
+     
+
+    </div>
+    <br>
+
+    <button class="order">order here</button>
+    
+</body>
+</html>
