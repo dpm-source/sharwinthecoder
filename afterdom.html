@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic buttons</title>
+    
+</head>
+<body>
+    <h1>SIMPLE CALCULATOR</h1>
+   <div>
+    <center>
+        number 1: <input type="numbers" id="number1"><br><br>
+        number 2: <input type="numbers" id="number2">
+        <h3 id="result">the number will be displayed here</h3>
+        <button onclick="add()">Add</button>
+        <button onclick="subtract()">Subtract</button>
+    </center>
+   </div>
+   <script>
+    function add(){
+        num1=Number(document.getElementById("number1").value);
+        num2=Number(document.getElementById("number2").value);
+        result=num1+num2;
+        document.getElementById("result").innerHTML=`${num1} + ${num2} = ${result}`;
+    }
+    function subtract(){
+         num1=Number(document.getElementById("number1").value);
+        num2=Number(document.getElementById("number2").value);
+        result=num1-num2;
+        document.getElementById("result").innerHTML=`${num1} - ${num2} = ${result}`;
+
+    }
+   </script>
+    
+</body>
+</html>
